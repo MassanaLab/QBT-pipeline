@@ -1,14 +1,14 @@
 #!/bin/bash
 
-MAIN_NAME="test_data" # <- YOU WRITE
-SOURCE="lustre/test_data" # <- YOU WRITE
-N=1000 # <- YOU WRITE
+MAIN_NAME="test_data" # <- 1 YOU WRITE
+SOURCE="lustre/test_data" # <- 2 YOU WRITE
+N=1000 # <- 3 YOU WRITE
 
 FILTER_SUFFIX="filter${N}"
 FULL_NAME="${MAIN_NAME}_${FILTER_SUFFIX}"
 
-SEQKIT_OUT="lustre/${FULL_NAME}" # <- YOU WRITE
-QBT_OUT="lustre/qbt_${FULL_NAME}" # <- YOU WRITE
+SEQKIT_OUT="lustre/${FULL_NAME}" # <- 4 YOU WRITE
+QBT_OUT="lustre/qbt_${FULL_NAME}" # <- 5 YOU WRITE
 
 
 # Dynamically generate sample list from filenames in ${SOURCE}
