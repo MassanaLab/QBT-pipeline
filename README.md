@@ -3,15 +3,16 @@
 ## Step 1
 Inside [0-run_QBT_pipline.sh](scripts/0-run_QBT_pipline.sh), please indicate:
 
-1-The name of your task, it will be used when creating all the needed files and folders.
+1. **Task name**: This will be used to name all generated files and folders.
 
-2-The origin of your assembled fasta files.
+2. **Source path**: The location of your assembled FASTA files.
 
-3-The lenght cutoff of the SeqKit filter. We put 1000 as the standard.
+3. **SeqKit filter length cutoff**: The minimum contig length. We recommend `1000` as the default.
 
-4-The path where you want the filtered fasta files.
+4. **Filtered output path**: Where the filtered FASTA files will be saved.
 
-5-The path where you want the output of QBT. This is not the final path becasue it will be later cleaned and moved to the same path but with an additional "_ess" on the name. QBT produce lot of "trash" files so we remove them and produce another set of folders with just the essential outputs that are needed to generate the final main summary report.
+5. **QBT output path**: Temporary path where QBT will store its outputs. Note that this is not the final output folder — the pipeline will later clean and move only the essential files to a new folder with `_ess` appended to the name. QBT produces many intermediate ("trash") files, which are discarded in the final step.
+
 
 ## Step 2
 Execute the main script like this:
