@@ -22,4 +22,4 @@ bash scripts/0-run_QBT_pipline.sh
 ```
 Two jobs will be sent to the queue. The first one runs the three programs (Quast, BUSCO, and Tiara), submitted as an array job for efficiency. The second job — the creation of the main final report — will wait for the first one to finish, since it depends on having the QBT data from all samples.
 
-Once this second job is complete, you'll find the final output summary table alongside all individual reports, inside the QBT output path you specified in [0-run_QBT_pipline.sh](scripts/0-run_QBT_pipline.sh). Remember: the final path will have an _ess suffix, in case you're having trouble finding it.
+Once this second job is complete, you'll find the final output summary table alongside all individual reports, inside the QBT output path you specified in [0-run_QBT_pipline.sh](scripts/0-run_QBT_pipline.sh). Remember: the final path will have an `_ess` suffix, in case you're having trouble finding it.
