@@ -1,7 +1,7 @@
 #!/bin/bash
 
 MAIN_NAME="test_data" # <- 1 YOU WRITE
-SOURCE="lustre/test_data" # <- 2 YOU WRITE
+SOURCE="test_data" # <- 2 YOU WRITE
 N=1000 # <- 3 YOU WRITE
 
 FILTER_SUFFIX="filter${N}"
